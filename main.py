@@ -1,4 +1,4 @@
-#!./ENV_DIR/bin/python
+#!/bin/python
 
 from flask import Flask, render_template, Response
 from pylibpd import *
@@ -48,7 +48,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', p_name=args.folder)
 
 @app.route('/puredata')
 def puredata():
