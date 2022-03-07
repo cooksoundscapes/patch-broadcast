@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BUZZZZZ</title>
+    <meta name="description" content="Honk da BUZZZZ">
+    <meta name="author" content="CookSoundScapes">
+    <meta property="og:title" content="BUZZZZZZZZZZZZ">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="BUZZZZZZZZZZZZZZZZZZZZZZZZ">
+    <style>
+    body {
+        background: lightblue;
+        padding: 20px;
+        margin: 0;
+        font-family: 'Sans';
+    }
+    h1 {
+        border: 1px solid teal;
+        border-radius: 2px;
+        text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>VAI MEU BRASIL!!!</h1>
+      <audio controls>
+        <source src="{{ url_for('puredata') }}" type="audio/x-wav;codec=pcm">
+        Your browser does not support the audio element.
+      </audio>
+    </main>
+  </body>
+</html>
